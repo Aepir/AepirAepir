@@ -252,8 +252,9 @@ a:visited {
 	overflow-y: scroll
 }
 
-#DPSBody_P,
-#HPSBody_P {
+
+#HPSBody_P,
+#DPSBody_P {
 	width: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll
