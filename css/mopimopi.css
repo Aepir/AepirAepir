@@ -391,7 +391,8 @@ a:visited {
 }
 
 .dropdown {
-	display: flex;
+  top: unset !important;
+  bottom: 0;
 	align-items: center;
 	justify-content: center
 }
