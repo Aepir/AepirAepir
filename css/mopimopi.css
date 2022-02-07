@@ -9,6 +9,89 @@
 	padding: 0;
 	touch-action: manipulation
 }
+  lang: 'ko',
+  style: {
+    // body
+    'resize-factor': 1,
+    'body-margin': '0.25rem',
+    'body-font': "'Lato', 'Source Han Sans', 'Meiryo UI', '맑은 고딕', sans-serif",
+    // header / ui
+    'nav-opacity': 1,
+    'nav-bg': 'rgba(31, 31, 31, 0.9)',
+    'nav-fg': '#ddd',
+    'header-bg': 'rgba(0, 0, 0, 0.5)',
+    'dropdown-bg': 'rgba(31, 31, 31, 0.95)',
+    'dropdown-fg': '#ddd',
+    'content-bg': '', // URL
+    'content-bg-color': 'rgba(0, 0, 0, 0.5)',
+    'content-bg-opacity': 1,
+    'content-bg-filter': '',
+    'content-fg': '#eee',
+    'cell-bg': 'rgba(255, 255, 255, 0.1)',
+    'my-row-fg': 'rgba(179, 229, 252, 1)',
+    'content-align': 'center',
+    'color-accent': '#26c6da',
+    'shadow-card': '0 0.05rem 0.25rem rgba(0, 0, 0, 0.5)',
+    'shadow-text': '0 0 0.125em rgba(0, 0, 0, 1)',
+    'font-size-small': '0.75rem',
+    'gauge-height': '10%',
+    'graph-height': '1.5rem'
+  },
+  tabs: [
+    {
+      id: 0,
+      label: 'DPS',
+      width: 1,
+      sort: 'deal.total',
+      col: [
+        'i.icon',
+        'i.name',
+        'deal.pct',
+        'deal.per_second',
+        'deal.critical',
+        'deal.direct',
+        'deal.crit_direct'
+      ]
+    }, {
+      id: 1,
+      label: 'Tank',
+      width: 1,
+      sort: 'tank.damage',
+      col: [
+        'i.icon',
+        'i.name',
+        'deal.per_second',
+        'tank.damage',
+        'tank.heal',
+        'etc.death'
+      ]
+    }, {
+      id: 2,
+      label: 'Heal',
+      width: 1,
+      sort: 'heal.total',
+      col: [
+        'i.icon',
+        'i.name',
+        'heal.pct',
+        'heal.per_second',
+        'heal.total',
+        'heal.over',
+        'heal.swing'
+      ]
+    }, {
+      id: 3,
+      label: '24',
+      width: 3,
+      sort: 'deal.total',
+      col: [
+        'i.icon',
+        'i.name',
+        'deal.per_second',
+        'deal.swing'
+      ]
+    }
+  ]
 
 html,
 body {
